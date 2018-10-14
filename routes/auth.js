@@ -5,7 +5,7 @@ const passport = require('passport')
 const {generateToken, verifyToken} = require('../helpers/jwt')
 
 router.get('/private', verifyToken, (req,res,next)=>{
-    res.send("Esto sololo ven los usuarios logueados como tu " + req.user.username)
+    res.send("Esto solo ven los usuarios logueados como tu " + req.user.username)
 })
 
 router.post('/login',
