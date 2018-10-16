@@ -65,10 +65,10 @@ const auth = require('./routes/auth')
 const users = require('./routes/users')
 const pictures = require('./routes/pictures')
 
+app.use('/', index);
 app.use('/pictures', pictures)
 app.use('/users', users)
 app.use('/', auth)
-app.use('/', index);
 
 
 
