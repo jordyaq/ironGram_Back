@@ -64,13 +64,13 @@ const index = require('./routes/index');
 const auth = require('./routes/auth')
 const users = require('./routes/users')
 const pictures = require('./routes/pictures')
-const post = require('./routes/post')
+
 
 app.use('/', index);
 app.use('/pictures', pictures)
 app.use('/users', users)
 app.use('/', auth)
-app.use('/post', post)
+
 
 
 
