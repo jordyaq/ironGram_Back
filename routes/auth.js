@@ -20,8 +20,12 @@ router.post('/signup', (req,res,next)=>{
     .then(user=>{
         res.status(201).json(user)
     })
-    .catch(e=>next(e))
+    .catch(e=>next(e)) 
 })
+
+router.get('/',(req,res,next) => {
+    console.log('hola')
+  })
 
 
 
